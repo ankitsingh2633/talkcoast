@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Comments System</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="comments.css" rel="stylesheet" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+  </head>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+    body {
+      margin: 0;
+      color: #2e323c;
+      background: url("design-7.png");
+      background-size: contain;
+      background-repeat: repeat;
+      position: relative;
+      mix-blend-mode: darken;
+      height: 100%;
+    }
+    .container {
+      margin-top: 50px;
+    }
+    h1 {
+      font-family: "poppins";
+      font-weight: 800;
+      text-align: center;
+    }
+    .ml-img {
+      padding: 20px;
+      height: 10%;
+      width: 10%;
+      margin-left: -20px;
+    }
+    .heading {
+      margin-left: 200px;
+      margin-top: -7%;
+      color: rgb(82, 158, 218);
+      text-shadow: 1px 1px blue;
+      font-size: 40px;
+    }
+    h4 {
+      margin-left: 41%;
+      color: rgb(82, 158, 218);
+      font-family: "poppins";
+    }
+    #msg {
+      font-size: 16px;
+      font-weight: bold;
+      margin-top: 15px;
+    }
+    a {
+      text-decoration: none;
+      color: white;
+    }
+    .comments_p {
+      margin-left: 50px;
+      margin-top: 100px;
+    }
+    .details {
+      font-weight: bold;
+    }
+    .comments {
+      font-weight: bold;
+    }
+  </style>
+  <body>
+    <div>
+      <div>
+        <img class="ml-img" src="machine-learning.jpg" alt="logo" />
+        <h1 class="heading">Welcome to Machine Learning!</h1>
+        <h4>clear your doubts and try to clear others doubt.</h4>
+      </div>
+      <div class="container">
+        <div class="comments_p">
+          <div class="content home">
+            <h2 class="details">Details</h2>
+          </div>
+
+          <div class="comments"></div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const comments_page_id = 1;
+      fetch("comments.php?page_id=" + comments_page_id)
+        .then((response) => response.text())
+        .then((data) => {
+          document.querySelector(".comments").innerHTML = data;
+          document
+            .querySelectorAll(
+              ".comments .write_comment_btn, .comments .reply_comment_btn"
+            )
+            .forEach((element) => {
+              element.onclick = (event) => {
+                event.preventDefault();
+                document
+                  .querySelectorAll(".comments .write_comment")
+                  .forEach((element) => (element.style.display = "none"));
+                document.querySelector(
+                  "div[data-comment-id='" +
+                    element.getAttribute("data-comment-id") +
+                    "']"
+                ).style.display = "block";
+                document
+                  .querySelector(
+                    "div[data-comment-id='" +
+                      element.getAttribute("data-comment-id") +
+                      "'] input[name='name']"
+                  )
+                  .focus();
+              };
+            });
+          document
+            .querySelectorAll(".comments .write_comment form")
+            .forEach((element) => {
+              element.onsubmit = (event) => {
+                event.preventDefault();
+                fetch("comments.php?page_id=" + comments_page_id, {
+                  method: "POST",
+                  body: new FormData(element),
+                })
+                  .then((response) => response.text())
+                  .then((data) => {
+                    element.parentElement.innerHTML = data;
+                  });
+              };
+            });
+        });
+    </script>
+  </body>
+</html>

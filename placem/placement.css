@@ -1,0 +1,209 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+.side_menu {
+  width: 100%;
+  float: left;
+  background-color: #4e73df;
+  height: 106vh;
+  position: absolute;
+}
+.logo {
+  font-family: "Poppins", sans-serif;
+  font-size: xx-large;
+  text-align: center;
+  color: rgb(240, 239, 239);
+}
+.logo:hover {
+  font-weight: bolder;
+}
+.contain-menu {
+  float: left;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+}
+.contain-menu ul {
+  width: 100%;
+  float: left;
+  padding: 0px !important;
+  margin-left: 0px !important;
+}
+.contain-menu li {
+  font-family: "Poppins", sans-serif;
+  list-style: none;
+  width: 100%;
+  color: rgb(240, 239, 239);
+  font-size: large;
+  padding: 15px;
+}
+.contain-menu li:hover {
+  background-color: rgb(230, 168, 98);
+}
+.contain-menu li a:link {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+.contain-menu li a:visited {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+.contain-menu li a:hover {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+  font-weight: bold;
+}
+.contain-menu li a:active {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+.padd-off {
+  padding: 0px !important;
+}
+.navbar {
+  background-color: #4e73df;
+  width: 100%;
+  height: 7vh;
+  justify-content: center;
+}
+.icon {
+  color: white;
+}
+.dash {
+  color: white;
+  font-size: x-large;
+  font-family: "Poppins", sans-serif;
+  padding: 9px;
+}
+.dash:hover {
+  font-weight: bold;
+}
+.welcome {
+  color: white;
+  font-size: x-large;
+  font-family: "Poppins", sans-serif;
+}
+@keyframes example {
+  0% {
+    left: 10px;
+    top: 0px;
+  }
+  50% {
+    left: 50px;
+    top: 0px;
+  }
+  100% {
+    left: 10px;
+    top: 0px;
+  }
+}
+.welcome {
+  position: relative;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+.nav-section {
+  background-color: rgba(2, 33, 75);
+}
+h1 {
+  margin: 0;
+  color: white;
+  text-align: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 5rem;
+}
+.placement {
+  margin-top: 5%;
+  justify-content: center;
+  text-align: right;
+  display: flex;
+}
+
+.courses {
+  font-size: 2rem;
+  text-align: center;
+  table-layout: fixed;
+}
+.package {
+  font-size: 2.5rem;
+}
+sup,
+sub {
+  color: rgb(230, 168, 98);
+}
+.figure {
+  font-size: 4rem;
+}
+.slider {
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  text-align: center;
+  background: rgba(2, 33, 75);
+}
+.slider .img-container img {
+  width: 570px;
+  height: 564px;
+}
+.slider .img-container a {
+  color: white;
+  position: relative;
+  top: -60%;
+  left: 70%;
+  font-size: 4rem;
+  text-decoration: none;
+  border: 1px solid white;
+  border-radius: 4px;
+  padding: 8px;
+}
+.slider .img-container a:hover {
+  font-weight: 600;
+}
+.img-container {
+  width: 1710px;
+  height: 564px;
+  position: relative;
+  transition: left 2s;
+  -webkit-transition: left 2s;
+  -moz-transition: left 2s;
+  -o-transition: left 2s;
+}
+.image-container .student1 {
+  display: block;
+}
+.image-container .student2 {
+  display: block;
+}
+.image-container .student3 {
+  display: block;
+}
+.slide-img {
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+.button-container {
+  top: -20px;
+  position: relative;
+}
+.slider-button {
+  display: inline-block;
+  height: 10px;
+  width: 10px;
+  border-radius: 5px;
+  background-color: rgb(245, 174, 42);
+}
+#slider-img-1:target ~ .img-container {
+  left: 0px;
+}
+#slider-img-2:target ~ .img-container {
+  left: -570px;
+}
+#slider-img-3:target ~ .img-container {
+  left: -1100px;
+}

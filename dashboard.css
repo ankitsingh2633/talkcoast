@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap'); 
+
+.side_menu
+{
+    width: 100%;
+    float: left;
+    background-color: #4e73df;
+    height: 106vh;
+    position: absolute;
+}
+.logo
+{
+    font-family: 'Poppins',sans-serif;
+    font-size: xx-large;
+    text-align: center;
+    color: rgb(240, 239, 239);
+}
+.logo:hover
+{
+    font-weight: bolder;
+}
+.contain-menu
+{
+    float: left;
+    width:100%;
+    height: 100%;
+    transition: 0.5s;
+}
+.contain-menu ul{
+    width:100%;
+    float: left;
+    padding:0px !important;
+    margin-left:0px!important;
+}
+.contain-menu li{
+    font-family: 'Poppins',sans-serif;
+    list-style: none;
+    width: 100%;
+    color:rgba(255,255,255,.8);
+    font-size: large;
+    padding:22px;
+}
+.contain-menu li:hover
+{
+    background-color: rgb(230, 168, 98);
+}
+.contain-menu li a:link {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+  }
+.contain-menu li a:visited {
+    color:white;
+    background-color: transparent;
+    text-decoration: none;
+  }
+.contain-menu li a:hover {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  .contain-menu li a:active {
+    color:white;
+    background-color: transparent;
+    text-decoration: none;
+  }
+.padd-off
+{
+   padding:0px!important;
+}
+.navbar
+{
+    background-color: #4e73df;
+    width:100%;
+    height:7vh;
+    justify-content: center;
+}
+.icon
+{
+    color: white;
+}
+.dash
+{
+    color: white;
+    font-size: x-large;
+    font-family: 'Poppins',sans-serif;
+    padding: 9px;
+}
+.dash:hover
+{
+    font-weight: bold;
+}
+.welcome
+{
+    color: white;
+    font-size: x-large;
+    font-family: 'Poppins',sans-serif;
+}
+@keyframes example {
+    0%   {left:10px; top:0px;}
+    50%  {left:50px; top:0px;}
+    100% {left:10px; top:0px;}
+  }
+  .welcome{
+    position: relative;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+  }
+.img
+{
+    background-color: #f8f7f7;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0px;
+    padding: 0px;
+    width:100%;
+    height: 95vh;
+    filter: blur(1px);
+}
+.updates
+{
+    background-color:#ffff;
+    width:220px;
+    height:80px;
+    margin-top: 30px;
+    margin-left:42px;
+    font-size: large;
+    font-family: 'Poppins',sans-serif;
+    padding: 22px 5px;
+    cursor: pointer;
+    border-radius: 7px;
+    text-align: center;
+    border-left: 4px solid #4e73df;
+    transition: 0.5s;
+}
+.update_title
+{
+    font-size: large;
+    color:#4e73df ;
+}
+.update_icon
+{
+    color: rgb(211, 209, 209);
+    font-size: x-large;
+}
+.updates:hover{
+    box-shadow: 5px 5px #4e73df;
+}
+.blocks li{
+    list-style: none;
+}
+.blog
+{
+    background-color: rgb(74, 97, 199);
+    width:220px;
+    height:80px;
+    margin-top: 30px;
+    margin-left:20px;
+    font-size: large;
+    font-family: 'Poppins',sans-serif;
+    padding: 22px 5px;
+    cursor: pointer;
+    border-radius: 10px;
+    text-align: center;
+    border-left: 4px solid #1cc88a;
+    transition:0.5s;
+}
+.blog_title
+{
+    font-size: large;
+    color: #1cc88a;
+}
+.blog_icon
+{
+    color: rgb(211, 209, 209);
+    font-size: x-large;
+}
+.blog:hover{
+    box-shadow: 5px 5px #1cc88a;
+}
+.comment
+{
+    background-color:rgb(255, 253, 253);
+    width:220px;
+    height:80px;
+    margin-top: 30px;
+    margin-left:20px;
+    font-size: large;
+    font-family: 'Poppins',sans-serif;
+    padding: 22px 5px;
+    cursor: pointer;
+    border-radius: 10px;
+    text-align: center;
+    border-left: 4px solid #36b9cc;
+    transform: 0.5s;
+}
+.comment_title
+{
+    font-size: large;
+    color: #36b9cc;
+}
+.comment_icon
+{
+    color: rgb(211, 209, 209);
+    font-size: x-large;
+}
+.comment:hover{
+    box-shadow: 5px 5px #36b9cc;
+}
+
+.club
+{
+    background-color: rgb(255, 253, 253);
+    width:220px;
+    height:80px;
+    margin-top: 30px;
+    margin-left:17px;
+    font-size: large;
+    font-family: 'Poppins',sans-serif;
+    padding: 22px 5px;
+    cursor: pointer;
+    border-radius: 10px;
+    text-align: center;
+    border-left: 4px solid #f6c23e;
+    transform: 0.5s;
+}
+.club_title
+{
+    font-size: large;
+    color: #f6c23e;
+}
+.club_icon
+{
+    color: rgb(211, 209, 209);
+    font-size: x-large;
+}
+.club:hover{
+    box-shadow: 5px 5px #f6c23e;
+}
+
+.trending_post
+{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-color: white;
+    width:850px;
+    height:70vh;
+    margin-top:70px;
+    margin-left:40px;
+    border:1px solid #e3e6f0;
+}
+.navbar_trending
+{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    width:100%;
+    background-color:#000000;
+    height: 40px;
+    text-align: center;
+    border:1px solid #e3e6f0;
+}
+.nav_text
+{
+   padding:7px 10px;
+   font-size: large;
+   font-family: 'Poppins',sans-serif;
+   color: #4e73df;
+   cursor: pointer;
+   font-weight: bold;
+   letter-spacing: px;
+}
+
+.view-more-button
+{
+    padding: 3px 3px;
+    margin: 13px 0px;
+}
+.view-more-button input{
+    padding: 5px 15px;
+    margin-top: 100px;
+    background:#4e73df;
+    font-family: 'Poppins',sans-serif;
+    border:white;
+    color:white;
+    letter-spacing: 2px;
+}
+.view-more-button:hover{
+font-weight: bolder;
+}
+.comments_notify
+{
+    border-radius: 20px;
+    background-color:white;
+    margin-top: 70px;
+    width:280px;
+    height:28vh;
+    margin-left: 30px;
+    border:2px solid #e3e6f0;
+    box-shadow: 1px 1px #e3e6f0;
+    margin-left: 120px;
+}
+.comments_notify_nav
+{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    width:100%;
+    background-color:rgb(247, 180, 103) ;
+    height: 40px;
+    text-align: center;
+}
+.comments_notify_nav_text
+{
+    padding:7px 10px;
+    font-size: large;
+    font-family: 'Poppins',sans-serif;
+    color: black;
+    cursor: pointer;
+}
+.comments_notify_nav_text:hover{
+    font-weight: bold;
+}

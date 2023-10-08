@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap'); 
+body{
+  background-color: #f8f7f7;
+}
+.side_menu
+{
+    width: 100%;
+    float: left;
+    background-color: #4e73df;
+    height: 148vh;
+    position: absolute;
+}
+.logo
+{
+    font-family: 'Poppins',sans-serif;
+    font-size: xx-large;
+    text-align: center;
+    color: rgb(240, 239, 239);
+}
+.logo:hover
+{
+    font-weight: bolder;
+}
+.contain-menu
+{
+    float: left;
+    width:100%;
+    height: 100%;
+    transition: 0.5s;
+}
+.contain-menu ul{
+    width:100%;
+    float: left;
+    padding:0px !important;
+    margin-left:0px!important;
+}
+.contain-menu li{
+    font-family: 'Poppins',sans-serif;
+    list-style: none;
+    width: 100%;
+    color: rgb(240, 239, 239);
+    font-size: large;
+    padding:22px;
+}
+.contain-menu li:hover
+{
+    background-color: rgb(230, 168, 98);
+}
+.contain-menu li a:link {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+  }
+.contain-menu li a:visited {
+    color:white;
+    background-color: transparent;
+    text-decoration: none;
+  }
+.contain-menu li a:hover {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  .contain-menu li a:active {
+    color:white;
+    background-color: transparent;
+    text-decoration: none;
+  }
+.padd-off
+{
+   padding:0px!important;
+}
+.navbar
+{
+    background-color: #4e73df;
+    width:100%;
+    height:7vh;
+    justify-content: center;
+}
+.icon
+{
+    color: white;
+}
+.dash
+{
+    color: white;
+    font-size: x-large;
+    font-family: 'Poppins',sans-serif;
+    padding: 9px;
+}
+.dash:hover
+{
+    font-weight: bold;
+}
+.welcome
+{
+    color: white;
+    font-size: x-large;
+    font-family: 'Poppins',sans-serif;
+}
+@keyframes example {
+    0%   {left:10px; top:0px;}
+    50%  {left:30px; top:0px;}
+    100% {left:10px; top:0px;}
+  }
+  .welcome{
+    position: relative;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+  }
+  * 
+  {
+      box-sizing: border-box;
+  }
+
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+  cursor: pointer;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: rgb(240, 240, 240);
+  border-radius: 50%;
+  display: inline-block;
+  transition:0.6s ease;
+  cursor: pointer;
+  position: relative;
+  margin-top: 480px;
+}
+.active {
+  background-color: #717171;
+}
+.slideshow-container
+{
+    position: relative;
+    width: 100%;
+}
+.slides {
+  display: block;
+  width: 100%;
+}
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  background-image: url('imgTrainingcss/undraw_social_interaction_cy9i.svg');
+  background-repeat: no-repeat;
+  filter: grayscale(10%);
+  width: 100%;
+  height: 100%;
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+.slideshow-container:hover .overlay {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.text {
+  color:rgb(87, 87, 87);
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  margin-left: 230px;
+  margin-top: -150px;
+  font-size: x-large;
+  font-family: Tahoma;
+  letter-spacing: 1px;
+}
+.sub-text2
+{
+  margin-left: 110px;
+}
+.midbar
+{
+  background-color:#4e73df;
+  width:100%;
+  height:100px;
+  border-left: 1px solid white;
+}
+.education
+{
+  margin-top: 28px;
+  font-size: large;
+  color: #e4e2e2;
+  font-family: 'Poppins',sans-serif;
+  margin-left: -20px;
+  cursor: pointer;
+}
+.edu-2
+{
+  margin-left: 80px;
+}
+.future
+{
+  margin-top: 35px;
+  font-family: 'Poppins',sans-serif;
+  font-size: small;
+  color: #e4e2e2;
+  margin-left: 20px;
+  cursor: pointer;
+}
+.boxes
+{
+  margin-top:60px;
+}
+.machine
+{
+  background-color: #cabed5;
+  width:250px;
+  height:30vh;
+  border-radius: 20px;
+  border:1px solid rgb(160, 159, 159);
+}
+.machine img{
+  margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding: 5px 5px;
+    border-radius: 20px;
+}
+
+.web
+{
+  background-color:rgb(253, 185, 107);
+  width:250px;
+  height:30vh;
+  border-radius: 20px;
+  border:1px solid rgb(160, 159, 159);
+}
+.web img{
+  margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding: 5px 5px;
+    border-radius: 20px;
+}
+
+.datastructure
+{
+  background-color:#ffd1dc;
+  width:250px;
+  height:30vh;
+  border-radius: 20px;
+  border:1px solid rgb(160, 159, 159);
+}
+.datastructure img{
+  margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding: 5px 5px;
+    border-radius: 20px;
+}
+
+.sports
+{
+  background-color:#c7e4eb;
+  width:250px;
+  height:30vh;
+  border-radius: 20px;
+  border:1px solid rgb(160, 159, 159);
+}
+.sports img{
+  margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding: 5px 5px;
+    border-radius: 20px;
+}

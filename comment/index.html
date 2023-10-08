@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Comments System</title>
+		<link href="style.css" rel="stylesheet" type="text/css">
+		<link href="comments.css" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	</head>
+	<style>
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+    body {
+      margin: 0;
+      color: #2e323c;
+      background: #f5f6fa;
+      position: relative;
+      height: 100%;
+	 
+	  
+    }
+
+.side_menu {
+  width: 100%;
+  float: left;
+  background-color: #3167f0;
+  height: 100vh;
+}
+.logo {
+  font-family: "Poppins", sans-serif;
+  font-size: xx-large;
+  text-align: center;
+  color: rgb(240, 239, 239);
+}
+.logo:hover {
+  font-weight: bolder;
+}
+.contain-menu {
+  float: left;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+}
+.contain-menu ul {
+  width: 100%;
+  float: left;
+  padding: 0px !important;
+  margin-left: 0px !important;
+}
+.contain-menu li {
+  font-family: "Poppins", sans-serif;
+  list-style: none;
+  width: 100%;
+  color: rgb(240, 239, 239);
+  font-size: large;
+  padding: 15px;
+}
+.contain-menu li:hover {
+  background-color: rgb(230, 168, 98);
+}
+.contain-menu li a:link {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+.contain-menu li a:visited {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+.contain-menu li a:hover {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+  font-weight: bold;
+}
+.contain-menu li a:active {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+.padd-off {
+  padding: 0px !important;
+}
+    .navbar {
+      background-color: #3167f0;
+      width: 100%;
+      height: 7vh;
+      justify-content: center;
+    }
+    .icon {
+      color: white;
+    }
+    .dash {
+      color: white;
+      font-size: x-large;
+      font-family: "Poppins", sans-serif;
+      padding: 9px;
+    }
+    .dash:hover {
+      font-weight: bold;
+    }
+    .welcome {
+      color: white;
+      font-size: x-large;
+      font-family: "Poppins", sans-serif;
+    }
+    @keyframes example {
+      0% {
+        left: 10px;
+        top: 0px;
+      }
+      50% {
+        left: 50px;
+        top: 0px;
+      }
+      100% {
+        left: 10px;
+        top: 0px;
+      }
+    }
+    .welcome {
+      position: relative;
+      animation-name: example;
+      animation-duration: 4s;
+      animation-iteration-count: infinite;
+    }
+
+    .account-settings .user-profile {
+      margin: 0 0 1rem 0;
+      padding-bottom: 1rem;
+      text-align: center;
+    }
+    .account-settings .user-profile .user-avatar {
+      margin: 0 0 1rem 0;
+    }
+    .account-settings .user-profile .user-avatar img {
+      width: 90px;
+      height: 90px;
+      -webkit-border-radius: 100px;
+      -moz-border-radius: 100px;
+      border-radius: 100px;
+    }
+    .account-settings .user-profile h5.user-name {
+      margin: 0 0 0.5rem 0;
+    }
+    .account-settings .user-profile h6.user-email {
+      margin: 0;
+      font-size: 1rem;
+      font-weight: 400;
+      color: #9fa8b9;
+    }
+    .account-settings .about {
+      margin: 2rem 0 0 0;
+      text-align: center;
+    }
+    .account-settings .about h5 {
+      margin: 0 0 15px 0;
+      color: #007ae1;
+    }
+    .account-settings .about p {
+      font-size: 1.3rem;
+    }
+    .form-control {
+      border: 1px solid #cfd1d8;
+      -webkit-border-radius: 2px;
+      -moz-border-radius: 2px;
+      border-radius: 2px;
+      font-size: 1.2rem;
+      background: #ffffff;
+      color: #2e323c;
+      transition: all 0.5s ease;
+    }
+    .form-control:hover,
+    .form-control:focus {
+      border: 2px solid rgb(228, 226, 226);
+      border-radius: 8px;
+    }
+    .form-group {
+      padding: 5px;
+    }
+
+    .card {
+      background: #ffffff;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      border-radius: 5px;
+      border: 0;
+      margin-bottom: 1rem;
+      padding: 20px;
+      transition: 0.5s;
+    }
+    .card:hover,
+    .card:focus {
+      box-shadow: 2px 2px 2px grey;
+    }
+    #msg{
+      font-size: 16px;
+      font-weight: bold;
+      margin-top: 15px ;
+    }
+    a{
+      text-decoration: none;
+      color:white;
+      
+    }
+	.comments_p{
+		margin-left:300px;
+	
+
+	}
+	</style>
+	<body>
+
+
+		
+		<div class="col-sm-12 padd-off">
+			<div class="col-sm-2 padd-off">
+			  <div class="side_menu">
+				<div class="logo">
+				  <img src="logo2.jpeg" style="width: 100%; height: 110px" />
+				
+				</div>
+				<div class="menu" style="margin-top:40px;">
+				  <div class="contain-menu">
+					<ul>
+					  <li>
+						<a href="http://localhost/talk/Dashboard.php">
+						  <span class="icon"><i class="fa fa-tachometer"></i></span>
+						  <span class="title">Dashboard</span>
+						</a>
+					  </li>
+					  <li>
+						<a href="http://localhost/talk/profile1.php">
+						  <span class="icon"><i class="fa fa-user-circle"></i></span>
+						  <span class="title">Profile</span>
+						</a>
+					  </li>
+					  <li>
+						<a href="http://localhost/talk/blog/index2.php">
+						  <span class="icon"><i class="fa fa-pencil"></i></span>
+						  <span class="title">Post A Blog</span>
+						</a>
+					  </li>
+					  <li>
+						<a href="http://localhost/talk/placem/placement.php">
+						  <span class="icon"
+							><i class="fa fa-graduation-cap"></i
+						  ></span>
+						  <span class="title">Placement</span>
+						</a>
+					  </li>
+					  <li>
+						<a href="http://localhost/talk/clubs/clubs.php">
+						  <span class="icon"><i class="fa fa-handshake-o"></i></span>
+						  <span class="title">Clubs</span>
+						</a>
+					  </li>
+					  <li>
+						<a href="http://localhost/talk/logout.php">
+						  <span class="icon"><i class="fa fa-sign-out"></i></span>
+						  <span class="title">Logout</span>
+						</a>
+					  </li>
+					</ul>
+				  </div>
+				</div>
+			  </div>
+			</div>
+			
+			
+				<nav class="navtop">
+					<div>
+						<h1>    WELCOME TO CLUB NAME</h1>
+					</div>
+				</nav>
+				<div class="comments_p" style="background-image:url('12.jpg');">
+		
+				<div class="content home">
+		
+					<h2>DETAILS </h2>
+		
+					
+					
+				</div>
+			
+		
+				<div class="comments"><hr></div>
+			</div>
+	
+			
+
+<script>
+const comments_page_id = 1; 
+fetch("comments.php?page_id=" + comments_page_id).then(response => response.text()).then(data => {
+	document.querySelector(".comments").innerHTML = data;
+	document.querySelectorAll(".comments .write_comment_btn, .comments .reply_comment_btn").forEach(element => {
+		element.onclick = event => {
+			event.preventDefault();
+			document.querySelectorAll(".comments .write_comment").forEach(element => element.style.display = 'none');
+			document.querySelector("div[data-comment-id='" + element.getAttribute("data-comment-id") + "']").style.display = 'block';
+			document.querySelector("div[data-comment-id='" + element.getAttribute("data-comment-id") + "'] input[name='name']").focus();
+		};
+	});
+	document.querySelectorAll(".comments .write_comment form").forEach(element => {
+		element.onsubmit = event => {
+			event.preventDefault();
+			fetch("comments.php?page_id=" + comments_page_id, {
+				method: 'POST',
+				body: new FormData(element)
+			}).then(response => response.text()).then(data => {
+				element.parentElement.innerHTML = data;
+			});
+		};
+	});
+});
+</script>
+
+	</body>
+</html>
